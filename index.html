@@ -14,9 +14,33 @@
         <div class="galeria-imagenes"></div>
     </div>
     <div class="bar">
-        <div class="inactive">
-            <a href="/">Done!</a>
+        <div  id="done" class="inactive">
+            <a href="#">Done!</a>
         </div>
+    </div>
+    <div class="bgDark"></div>
+    <div class="form">
+        <p href="#" class="close-form">X</p>
+        <h2>Datos de contacto</h2>
+        <p>Coloca tus datos de contacto</p>
+        <form class="formulario" action="">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Tu nombre">
+            </div>
+            <div class="campo">
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="tel" placeholder="Tu telefono">
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="Tu email">
+            </div>
+            <div class="campo">
+                <label for="text-area">Mensaje (opcional)</label>
+                <textarea id="text-area" placeholder="Algun dato adicional"></textarea>
+            </div>
+        </form>
     </div>
     <script src="build/js/bundle.min.js"></script>
 </body>
