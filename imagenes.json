@@ -1,0 +1,64 @@
+{
+    "imagenes": [
+        {
+            "id": 1,
+            "nombre": "Servicio 1",
+            "ubicacion": "/build/gallery/1.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Servicio 2",
+            "ubicacion": "/build/gallery/2.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Servicio 3",
+            "ubicacion": "/build/gallery/3.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Servicio 4",
+            "ubicacion": "/build/gallery/4.jpg"
+        },
+        {
+            "id": 5,
+            "nombre": "Servicio 5",
+            "ubicacion": "/build/gallery/5.jpg"
+        },
+        {
+            "id": 6,
+            "nombre": "Servicio 6",
+            "ubicacion": "/build/gallery/6.jpg"
+        },
+        {
+            "id": 7,
+            "nombre": "Servicio 7",
+            "ubicacion": "/build/gallery/7.jpg"
+        },
+        {
+            "id": 8,
+            "nombre": "Servicio 8",
+            "ubicacion": "/build/gallery/8.jpg"
+        },
+        {
+            "id": 9,
+            "nombre": "Servicio 9",
+            "ubicacion": "/build/gallery/9.jpg"
+        },
+        {
+            "id": 10,
+            "nombre": "Servicio 10",
+            "ubicacion": "/build/gallery/10.jpg"
+        },
+        {
+            "id": 11,
+            "nombre": "Servicio 11",
+            "ubicacion": "/build/gallery/11.jpg"
+        },
+        {
+            "id": 12,
+            "nombre": "Servicio 12",
+            "ubicacion": "/build/gallery/12.jpg"
+        }
+    ]
+}
