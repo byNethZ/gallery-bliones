@@ -8,25 +8,47 @@
     <link  rel="icon"   href="build/img/icono-azul.webp" type="image/png" />
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body>
+<body class="menu-principal">
     <h2>Gallery</h2>
-    <div class="gallery contenedor">
-        <div class="galeria-imagenes"></div>
-    </div>
-    <div class="bar">
-        <div  id="done" class="inactive">
-            <a href="#">Done!</a>
+    <div class="contenedor cont-menu">
+        <div class="listado">
+            <h2>ANTOJITOS MEXICANOS</h2>
+            <div class="bg-menu">
+                <div class="comida"><a href="gallery.html">Chimichanga</a></div>
+                <div class="comida"><a href="gallery.html">Alambres</a></div>
+                <div class="comida"><a href="gallery.html">Chilaquiles</a></div>
+                <div class="comida"><a href="gallery.html">Empanadas</a></div>
+                <div class="comida"><a href="gallery.html">Flautas</a></div>
+                <div class="comida"><a href="gallery.html">Gorditas</a></div>
+                <div class="comida"><a href="gallery.html">Huaraches</a></div>
+                <div class="comida"><a href="gallery.html">Sopes</a></div>
+                <div class="comida"><a href="gallery.html">Tamales</a></div>
+                <div class="comida"><a href="gallery.html">Papas preparadas</a></div>
+                <div class="comida"><a href="gallery.html">Enchiladas</a></div>
+                <div class="comida"><a href="gallery.html">Molcajetes</a></div>
+                <div class="comida"><a href="gallery.html">Menudo</a></div>
+                <div class="comida"><a href="gallery.html">Pozole</a></div>
+                <div class="comida"><a href="gallery.html">Burritos</a></div>
+                <div class="comida"><a href="gallery.html">Quesadillas</a></div>
+                <div class="comida"><a href="gallery.html">Tortas</a></div>
+            </div>
+        </div>
+        <div class="listado">
+            <h2>BEBIDAS</h2>
         </div>
     </div>
     <div class="bgDark"></div>
     <div class="form">
-        <p href="#" class="close-form">X</p>
         <h2>Datos de contacto</h2>
         <p>Coloca tus datos de contacto</p>
         <form class="formulario" action="">
             <div class="campo">
                 <label for="nombre">Nombre</label>
                 <input id="nombre" type="text" placeholder="Tu nombre">
+            </div>
+            <div class="campo">
+                <label for="restaurante">Nombre del restaurante</label>
+                <input id="restaurante" type="text" placeholder="Tu restaurante">
             </div>
             <div class="campo">
                 <label for="telefono">Telefono</label>
@@ -36,12 +58,8 @@
                 <label for="email">E-mail</label>
                 <input id="email" type="email" placeholder="Tu email">
             </div>
-            <div class="campo">
-                <label for="mensaje">Mensaje (opcional)</label>
-                <textarea id="mensaje" placeholder="Algun dato adicional"></textarea>
-            </div>
             <div class="submit">
-                <input id="submit" type="submit">
+                <input type="button" id="getDatos" class="boton-inactive-block" value="Ok">
             </div>
         </form>
     </div>
