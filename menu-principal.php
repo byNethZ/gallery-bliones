@@ -4,6 +4,8 @@
     if(!$auth){
         header('Location: /');
     }
+
+    require 'includes/funciones.php';
 ?>
 
 <!DOCTYPE html>
@@ -24,30 +26,38 @@
     <h2>Categorias</h2>
     <div class="gallery contenedor">
         <div class="galeria-categorias">
-            <div class="cont-categoria">
-                <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
-                <div class="nombre-categoria">
-                    <p>Antojitos Mexicanos</p>
+            <a href="gallery.php?galeria=antojitos">
+                <div class="cont-categoria">
+                    <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
+                    <div class="nombre-categoria">
+                        <p>Antojitos Mexicanos</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cont-categoria">
-                <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
-                <div class="nombre-categoria">
-                    <p>Bebidas</p>
+            </a>
+            <a href="gallery.php?galeria=drink">
+                <div class="cont-categoria">
+                    <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
+                    <div class="nombre-categoria">
+                        <p>Bebidas</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cont-categoria">
-                <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
-                <div class="nombre-categoria">
-                    <p>Carnes</p>
+            </a>
+            <a href="gallery.php?galeria=meal">
+                <div class="cont-categoria">
+                    <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
+                    <div class="nombre-categoria">
+                        <p>Carnes</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cont-categoria">
-                <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
-                <div class="nombre-categoria">
-                    <p>Puerco</p>
+            </a>
+            <a href="gallery.php?galeria=pork">
+                <div class="cont-categoria">
+                    <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
+                    <div class="nombre-categoria">
+                        <p>Puerco</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
     <script src="build/js/bundle.min.js"></script>

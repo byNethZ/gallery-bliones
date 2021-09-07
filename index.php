@@ -24,17 +24,20 @@
                     if($auth === true){
                         session_start();
                         $_SESSION['usuario'] = $usuario['nombre'];
+                        $_SESSION['restaurante'] = $usuario['nombreRestaurante'];
+                        $_SESSION['telefono'] = $usuario['telefono'];
+                        $_SESSION['email'] = $usuario['email'];
                         $_SESSION['login'] = true;
 
                         header('Location: /menu-principal.php');
                     }
                 } else{
                     $errores[] = "Restaurante no existe";
-                    var_dump($auth);
+                    
                 }
             } else{
                 $errores[] = "El usuario no existe";
-                var_dump($auth);
+                
             }
 
 
@@ -45,6 +48,13 @@
             $query = "INSERT INTO userauth ( nombre, nombreRestaurante, telefono, email ) VALUES ( '$nombre', '$nombreRestaurante', '$telefono', '$email' )";
     
             $resultado = mysqli_query($db, $query);
+
+            session_start();
+            $_SESSION['usuario'] = $nombre;
+            $_SESSION['restaurante'] = $nombreRestaurante;
+            $_SESSION['telefono'] = $telefono;
+            $_SESSION['email'] = $email;
+            $_SESSION['login'] = true;
 
             header('Location: /menu-principal.php');
         }

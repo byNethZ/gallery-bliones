@@ -5,6 +5,8 @@
         header('Location: /');
     }
 
+    require 'includes/funciones.php';
+
 ?>
 
 <!DOCTYPE html>
