@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    $auth = $_SESSION['login'];
+    if(!$auth){
+        header('Location: /');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +19,7 @@
 <body class="menu-categorias bg-galerias">
     <p id="mostrarArray">Mostrar Arreglo en consola</p>
     <div class="back">
-        <a class="active" href="index.html">Menu Principal</a>
+        <a class="active" href="index.php">Inicio</a>
     </div>
     <h2>Categorias</h2>
     <div class="gallery contenedor">

@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    $auth = $_SESSION['login'];
+    if(!$auth){
+        header('Location: /');
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +18,7 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body class="cont-galeria">
-    <a class="back" href="index.html">Menu Principal</a>
+    <a class="back" href="menu-principal.php">Menu Principal</a>
     <h2>Gallery</h2>
     <div class="saludo"></div>
     <div class="gallery contenedor">

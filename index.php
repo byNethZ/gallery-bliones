@@ -5,6 +5,50 @@
 
     if($_SERVER['REQUEST_METHOD']=== 'POST'){
         $nombre = $_POST['nombre'];
+        $nombreRestaurante = $_POST['nombreRestaurante'];
+
+        $errores = [];
+        $auth = false;
+
+        if($_POST['submit']=== 'Login'){
+            $nombreUsuario = mysqli_real_escape_string($db, filter_var($nombre));
+            $restauranteUsuario = mysqli_real_escape_string($db, filter_var($nombreRestaurante));
+
+            $query = "SELECT * FROM userauth WHERE nombre = '${nombreUsuario}' ";
+            $resultado = mysqli_query($db, $query);
+
+            if( $resultado->num_rows){
+                $usuario = mysqli_fetch_assoc($resultado);
+                if($usuario['nombreRestaurante'] === $restauranteUsuario){
+                    $auth = true;
+                    if($auth === true){
+                        session_start();
+                        $_SESSION['usuario'] = $usuario['nombre'];
+                        $_SESSION['login'] = true;
+
+                        header('Location: /menu-principal.php');
+                    }
+                } else{
+                    $errores[] = "Restaurante no existe";
+                    var_dump($auth);
+                }
+            } else{
+                $errores[] = "El usuario no existe";
+                var_dump($auth);
+            }
+
+
+        } elseif ($_POST['submit']=== 'Register'){
+            $telefono = $_POST['telefono'];
+            $email = $_POST['email'];
+    
+            $query = "INSERT INTO userauth ( nombre, nombreRestaurante, telefono, email ) VALUES ( '$nombre', '$nombreRestaurante', '$telefono', '$email' )";
+    
+            $resultado = mysqli_query($db, $query);
+
+            header('Location: /menu-principal.php');
+        }
+
     }
 
 ?>
@@ -29,22 +73,22 @@
             <form class="formulario" method="POST">
                 <div class="campo">
                     <label for="nombre">Nombre</label>
-                    <input id="nombre" type="text" placeholder="Tu nombre" name="nombre">
+                    <input id="nombre" type="text" placeholder="Tu nombre" name="nombre" required>
                 </div>
                 <div class="campo">
                     <label for="restaurante">Nombre del restaurante</label>
-                    <input id="restaurante" type="text" placeholder="Tu restaurante" name="nombreRestaurante">
+                    <input id="restaurante" type="text" placeholder="Tu restaurante" name="nombreRestaurante" required>
                 </div>
                 <div class="campo">
                     <label for="telefono">Telefono</label>
-                    <input id="telefono" type="tel" placeholder="Tu telefono" name="telefono">
+                    <input id="telefono" type="tel" placeholder="Tu telefono" name="telefono" required>
                 </div>
                 <div class="campo">
                     <label for="email">E-mail</label>
-                    <input id="email" type="email" placeholder="Tu email" name="email">
+                    <input id="email" type="email" placeholder="Tu email" name="email" required>
                 </div>
                 <div class="submit">
-                    <input type="submit" id="getDatos" class="boton-inactive-block" value="Ok">
+                    <input type="submit" id="getDatos" class="boton-inactive-block" value="Register" name="submit">
                 </div>
             </form>
             <p class="blue">¿Ya te registraste? <a id="btn-sesion" href="#">Inicia sesión</a></p>
@@ -55,17 +99,22 @@
         <div class="form">
             <h2>Datos de contacto</h2>
             <p>Coloca tus datos de contacto</p>
-            <form class="formulario" action="" method="POST">
+            <?php if(!empty($errores)): foreach($errores as $error): ?>
+            <div class="error">
+                <?php echo $error; ?>
+            </div>
+            <?php endforeach; endif;?>
+            <form class="formulario" method="POST">
                 <div class="campo">
                     <label for="nombre">Nombre</label>
-                    <input id="sesion-nombre" type="text" placeholder="Tu nombre">
+                    <input id="sesion-nombre" type="text" placeholder="Tu nombre" name="nombre" required>
                 </div>
                 <div class="campo">
                     <label for="restaurante">Nombre del restaurante</label>
-                    <input id="sesion-restaurante" type="text" placeholder="Tu restaurante">
+                    <input id="sesion-restaurante" type="text" placeholder="Tu restaurante" name="nombreRestaurante" required>
                 </div>
                 <div class="submit">
-                    <input type="button" id="sesion-getDatos" class="boton-inactive-block" value="Ok">
+                    <input type="submit" id="sesion-getDatos" class="boton-inactive-block" value="Login" name="submit">
                 </div>
             </form>
             <p class="blue">¿No estás registrado? <a id="btn-registro" href="#">Registrate</a></p>
