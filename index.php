@@ -1,3 +1,14 @@
+<?php
+    require 'includes/database.php';
+
+    $db= conectarDB();
+
+    if($_SERVER['REQUEST_METHOD']=== 'POST'){
+        $nombre = $_POST['nombre'];
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +26,7 @@
         <div class="form">
             <h2>Datos de contacto</h2>
             <p>Coloca tus datos de contacto</p>
-            <form class="formulario" action="includes/registro.php" method="POST">
+            <form class="formulario" method="POST">
                 <div class="campo">
                     <label for="nombre">Nombre</label>
                     <input id="nombre" type="text" placeholder="Tu nombre" name="nombre">
@@ -33,7 +44,7 @@
                     <input id="email" type="email" placeholder="Tu email" name="email">
                 </div>
                 <div class="submit">
-                    <input type="submit" id="getDatos" class="boton-inactive-block" value="Ok" onclick="location.href='menu-principal.html'">
+                    <input type="submit" id="getDatos" class="boton-inactive-block" value="Ok">
                 </div>
             </form>
             <p class="blue">¿Ya te registraste? <a id="btn-sesion" href="#">Inicia sesión</a></p>

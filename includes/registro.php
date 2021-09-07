@@ -1,11 +1,8 @@
 <?php
     require 'database.php';
 
-    $nombre = $_POST['nombre'];
-    $nombreResturante = $_POST['nombreRestaurante'];
-    $telefono = $_POST['telefono'];
-    $email = $_POST['email'];
+/*     if($_SERVER['REQUEST_METHOD']==='POST'){
 
-    $sql = "INSERT INTO userauth (nombre, nombreRestaurante, telefono, email) VALUES ('$nombre', '$nombreResturante', '$telefono', '$email')";
+    } */
 
-    $resultado = $mysqli->query($sql);
+    // var_dump($_POST);

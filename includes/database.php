@@ -1,9 +1,13 @@
 <?php
 
-// $db = mysqli_connect('localhost', 'root', '','userauth');
-$mysqli = new mysqli('localhost', 'root', '','gallery_bliones');
+// $db = new mysqli('localhost', 'root', '','gallery_bliones');
 
-if (!$mysqli){
-    echo 'Error en la conexión';
-    exit;
+function conectarDB() : mysqli {
+    $db = mysqli_connect('localhost', 'root', '','gallery_bliones');
+    if (!$db){
+        echo 'Error en la conexión';
+        exit;
+    }
+
+    return $db;
 }
