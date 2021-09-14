@@ -5,7 +5,7 @@
         header('Location: /');
     }
 
-    require 'includes/funciones.php';
+    require 'includes/recibir-datos.php';
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +24,9 @@
         <a class="active" href="index.php">Inicio</a>
     </div>
     <h2>Categorias</h2>
+    <div class="nav contenedor">
+    <a href="index.php" class="active">Atras</a>
+    </div>
     <div class="gallery contenedor">
         <div class="galeria-categorias">
             <a href="gallery.php?galeria=antojitos">
@@ -60,6 +63,12 @@
             </a>
         </div>
     </div>
+    <script type="text/javascript">
+            sessionStorage.setItem('nameUser', '<?php echo $nombreUsuario;?>');
+            sessionStorage.setItem('restauranteUser', '<?php echo $restauranteUsuario;?>');
+            sessionStorage.setItem('phoneUser', '<?php echo $telefonoUsuario;?>');
+            sessionStorage.setItem('emailUser', '<?php echo $emailUsuario;?>');
+        </script>
     <script src="build/js/bundle.min.js"></script>
 </body>
 </html>
