@@ -7,8 +7,3 @@ $nombreUsuario = $_SESSION['usuario'];
 $restauranteUsuario = $_SESSION['restaurante'];
 $telefonoUsuario = $_SESSION['telefono'];
 $emailUsuario = $_SESSION['email'];
-
-var_dump($nombreUsuario);
-var_dump($restauranteUsuario);
-var_dump($telefonoUsuario);
-var_dump($emailUsuario);

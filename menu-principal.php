@@ -20,9 +20,6 @@
 </head>
 <body class="menu-categorias bg-galerias">
     <p id="mostrarArray">Mostrar Arreglo en consola</p>
-    <div class="back">
-        <a class="active" href="index.php">Inicio</a>
-    </div>
     <h2>Categorias</h2>
     <div class="nav contenedor">
     <a href="index.php" class="active">Atras</a>
@@ -31,7 +28,14 @@
         <div class="galeria-categorias">
             <a href="gallery.php?galeria=antojitos">
                 <div class="cont-categoria">
-                    <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
+                    <div class="slider">
+                        <ul>
+                            <li><img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/5M4_2050.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/DSC_06391.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/bg-inicio.webp" alt="imagen categoria" class="img-categoria"></li>
+                        </ul>
+                    </div>
                     <div class="nombre-categoria">
                         <p>Antojitos Mexicanos</p>
                     </div>
@@ -39,7 +43,14 @@
             </a>
             <a href="gallery.php?galeria=drink">
                 <div class="cont-categoria">
-                    <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
+                    <div class="slider">
+                        <ul>
+                            <li><img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/5M4_2050.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/DSC_06391.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/bg-inicio.webp" alt="imagen categoria" class="img-categoria"></li>
+                        </ul>
+                    </div>
                     <div class="nombre-categoria">
                         <p>Bebidas</p>
                     </div>
@@ -47,7 +58,14 @@
             </a>
             <a href="gallery.php?galeria=meal">
                 <div class="cont-categoria">
-                    <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
+                    <div class="slider">
+                        <ul>
+                            <li><img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/5M4_2050.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/DSC_06391.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/bg-inicio.webp" alt="imagen categoria" class="img-categoria"></li>
+                        </ul>
+                    </div>
                     <div class="nombre-categoria">
                         <p>Carnes</p>
                     </div>
@@ -55,7 +73,14 @@
             </a>
             <a href="gallery.php?galeria=pork">
                 <div class="cont-categoria">
-                    <img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria">
+                    <div class="slider">
+                        <ul>
+                            <li><img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/5M4_2050.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/DSC_06391.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/bg-inicio.webp" alt="imagen categoria" class="img-categoria"></li>
+                        </ul>
+                    </div>
                     <div class="nombre-categoria">
                         <p>Puerco</p>
                     </div>
