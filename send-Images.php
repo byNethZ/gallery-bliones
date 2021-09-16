@@ -20,7 +20,15 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body class="sendImages">
-    <h2>Thanks...</h2>
+    <a id="logo" class="logo" href=""><img src="build/img/Logo_blanco.webp" alt=""></a>
+    <div class="content-text">
+        <h2>Thanks for your order</h2>
+        <h3>We will contact you shortly</h3>
+        <h4>Crezcamos juntos</h4>
+    </div>
+    <div class="content-send">
+        <a href="index.php" class="active" id="finish">Inicio</a>
+    </div>
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="build/js/bundle.min.js"></script>
 </body>

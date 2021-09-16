@@ -1,11 +1,6 @@
 {
     "imagenes": [
         {
-            "id": 1,
-            "nombre": "Antojitos_Catalogo_3",
-            "ubicacion": "/build/img/antojitos/1.webp"
-        },
-        {
             "id": 2,
             "nombre": "Servicio 2",
             "ubicacion": "/build/img/antojitos/2.webp"

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body class="menu-categorias bg-galerias">
-    <p id="mostrarArray">Mostrar Arreglo en consola</p>
+    <!-- <p id="mostrarArray">Mostrar Arreglo en consola</p> -->
     <h2>Categorias</h2>
     <div class="nav contenedor">
     <a href="index.php" class="active">Atras</a>

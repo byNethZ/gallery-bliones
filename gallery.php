@@ -19,8 +19,8 @@
     <link  rel="icon"   href="build/img/icono-azul.webp" type="image/webp" />
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body class="cont-galeria">
-    <p id="mostrarArray">Mostrar Arreglo en consola</p>
+<body class="cont-galeria bg-galerias">
+    <!-- <p id="mostrarArray">Mostrar Arreglo en consola</p> -->
     <h2>Gallery</h2>
     <div class="nav contenedor">
         <a id="back" href="menu-principal.php" class="active">Atras</a>

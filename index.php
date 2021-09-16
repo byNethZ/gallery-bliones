@@ -29,7 +29,7 @@
                         $_SESSION['email'] = $usuario['email'];
                         $_SESSION['login'] = true;
 
-                        header('Location: /menu-principal.php');
+                        header('Location: menu-principal.php');
                     }
                 } else{
                     $errores[] = "Restaurante no existe";
@@ -56,7 +56,7 @@
             $_SESSION['email'] = $email;
             $_SESSION['login'] = true;
 
-            header('Location: /menu-principal.php');
+            header('Location: menu-principal.php');
         }
 
     }
