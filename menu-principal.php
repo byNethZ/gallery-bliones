@@ -20,6 +20,7 @@
 </head>
 <body class="menu-categorias bg-galerias">
     <!-- <p id="mostrarArray">Mostrar Arreglo en consola</p> -->
+    <img class="logo-pagina" src="build/img/Logo_azul_slogan.webp" alt="">
     <h2>Categorias</h2>
     <div class="nav contenedor">
     <a href="index.php" class="active">Atras</a>

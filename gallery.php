@@ -21,6 +21,7 @@
 </head>
 <body class="cont-galeria bg-galerias">
     <!-- <p id="mostrarArray">Mostrar Arreglo en consola</p> -->
+    <img class="logo-pagina" src="build/img/Logo_azul_slogan.webp" alt="">
     <h2>Gallery</h2>
     <div class="nav contenedor">
         <a id="back" href="menu-principal.php" class="active">Atras</a>
