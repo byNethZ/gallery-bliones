@@ -18,7 +18,7 @@
     <link  rel="icon"   href="build/img/icono-azul.webp" type="image/png" />
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body class="menu-categorias bg-galerias">
+<body class="menu-categorias bg-galerias general">
     <!-- <p id="mostrarArray">Mostrar Arreglo en consola</p> -->
     <img class="logo-pagina" src="build/img/Logo_azul_slogan.webp" alt="">
     <h2>Categorias</h2>
@@ -27,18 +27,18 @@
     </div>
     <div class="gallery contenedor">
         <div class="galeria-categorias">
-            <a href="gallery.php?galeria=antojitos">
+            <a href="menu-principal-antojitos.php">
                 <div class="cont-categoria">
                     <div class="slider">
                         <ul>
-                            <li><img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/5M4_2050.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/DSC_06391.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/bg-inicio.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/antojitos_002.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/antojitos_005.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/antojitos_006.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/antojitos_007.webp" alt="imagen categoria" class="img-categoria"></li>
                         </ul>
-                    </div>
-                    <div class="nombre-categoria">
-                        <p>Antojitos Mexicanos</p>
+                        <div class="nombre-categoria">
+                            <p>Antojitos Mexicanos</p>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -46,10 +46,10 @@
                 <div class="cont-categoria">
                     <div class="slider">
                         <ul>
-                            <li><img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/5M4_2050.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/DSC_06391.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/bg-inicio.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/drink_002.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/drink_006.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/drink_007.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/drink_008.webp" alt="imagen categoria" class="img-categoria"></li>
                         </ul>
                     </div>
                     <div class="nombre-categoria">
@@ -61,10 +61,10 @@
                 <div class="cont-categoria">
                     <div class="slider">
                         <ul>
-                            <li><img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/5M4_2050.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/DSC_06391.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/bg-inicio.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/meal_003.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/meal_006.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/meal_007.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/meal_008.webp" alt="imagen categoria" class="img-categoria"></li>
                         </ul>
                     </div>
                     <div class="nombre-categoria">
@@ -76,10 +76,10 @@
                 <div class="cont-categoria">
                     <div class="slider">
                         <ul>
-                            <li><img src="build/img/0C7A9199.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/5M4_2050.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/DSC_06391.webp" alt="imagen categoria" class="img-categoria"></li>
-                            <li><img src="build/img/bg-inicio.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/pork_004.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/pork_006.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/pork_007.webp" alt="imagen categoria" class="img-categoria"></li>
+                            <li><img src="build/img/slider/pork_008.webp" alt="imagen categoria" class="img-categoria"></li>
                         </ul>
                     </div>
                     <div class="nombre-categoria">

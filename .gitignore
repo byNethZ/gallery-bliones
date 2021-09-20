@@ -3,3 +3,7 @@ gulpfile.js
 src/
 package-lock.json
 package.json
+build/img/antojitos/
+build/img/drink/
+build/img/meat/
+build/img/pork/
